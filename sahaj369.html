@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<style>
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ec98a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+input[type], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+
+<div>
+  <form id="sahaj369">
+    <label for="name"> Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Full Name"><br><br>
+     <label for="number">Phone Number:</label>
+    <input type="number" id="number" name="number" placeholder="Enter Your Phone Number"><br><br>
+   
+
+    
+   
+    <input type="submit" value="Submit" >
+</form>
+</div>
+
+<script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycby56tI7JPosD6RTTstQZC3W6TMIACR-StH5et4_d0sRTDn2Ek5pLiaioAEpoB8iUb1G/exec';
+  
+  const form = document.forms['sahaj369'];
+  // Function to register a new user
+function registerUser(name, number) {
+  // Validate user input
+  if (!name || !number) {
+    alert('Please enter a name and number');
+    return;
+  }
+
+  // Store user data in local storage
+  localStorage.setItem('name', name);
+  localStorage.setItem('number',number);
+
+  // Send user data to Google Sheet
+  const sheetUrl = `https://script.google.com/macros/s/AKfycby56tI7JPosD6RTTstQZC3W6TMIACR-StH5et4_d0sRTDn2Ek5pLiaioAEpoB8iUb1G/exec`;
+  const sheetData = {
+    'name': name,
+    'number': number
+  };
+  fetch(sheetUrl, {
+    method: 'POST',
+    body: JSON.stringify(sheetData),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+}
+
+  form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert('Success!', response))
+          .catch(error => console.error('Error!', error.message));
+        
+          const name = document.getElementById('name').value;
+  const number = document.getElementById('number').value;
+
+  // Agar aapko input ki validation karni hai, toh yehan par kar sakte hain
+
+  // Agar input sahi hai, toh next page par redirect karein
+  if (name !== '' && number !== '') {
+    window.location.href = 'sajah.html'; // apne next page ki URL yahan par daalein
+  } else {
+    alert('Kripya name aur number dono bharein');
+  }
+  });
+</script>
+	
+
+</body>
+</html>
+
+
+

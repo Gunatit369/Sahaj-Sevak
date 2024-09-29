@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <a href="sahaj936.html" target="sahaj936">
+        <img src="https://yt3.googleusercontent.com/v5aG_KUBOaziL1ys6HikYtoimxZUVLVUZheRe5Q--a5eO5znig4eYOiPDh1uh8l0xm5I8lVzRBM=s900-c-k-c0x00ffffff-no-rj" alt="_main"></a>
+        <span style="position: absolute; top: 25%; left: 35%; transform: translate(-50%, -50%); font-size: 24px; color: #fff; text-decoration: none; animation: animateText 2s infinite;">
+            ddsfdffdfd
+        </span>
+    
+
+        <img src="https://i.scdn.co/image/ab67616d00001e023026938e7e6744f1d068e3f8">
+        <img src="https://static4.tgstat.ru/channels/_0/fe/fea78caef979258d788ef47803730527.jpg">
+        <img src="https://i.playboard.app/p/b36458a57964943779da2e966bf2383d/default.jpg">
+        <img src="https://ugc.production.linktr.ee/iu07YjBTAuGEV0AY0ynA_image?io=true&size=thumbnail-stack-v1_0">
+    </div>
+</body>
+</html><video poster="" width="500px" height="300px" controls loop muted autoplay="autoplay">
+        <source  src="D:\abhishek\video\Sahaj369.mp4">
+      
+    </video>

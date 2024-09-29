@@ -1,0 +1,25 @@
+ <frame src="birds.html">
+        <frame src="email.html">
+        <frame src="contect us.html">  
+       }
+       @media (max-width: 768px) {
+           .card {
+               width: 100%;
+               height: auto;
+               margin-bottom: 16px;
+               transform: scale(0.9);
+               transition: all ease-in-out 0.3s;
+               box-shadow: 0 0 5px rgba(0,0,0,0.5);
+               filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+               transform-origin: center;
+               overflow: hidden;
+               padding: 16px;
+               margin: 0;
+               flex-basis: 100%;
+               box-sizing: border-box;
+              
+           
+           }
+       
+       
+       }
