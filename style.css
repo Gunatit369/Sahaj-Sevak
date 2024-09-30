@@ -293,6 +293,7 @@ header .icons #menu-bars{
         background: var(--red);
     }
     .home .box .content h3{
+        margin-top: 300px;
         font-size:5rem;
     }
     .anime .box:hover{
