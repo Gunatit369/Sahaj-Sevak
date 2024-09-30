@@ -59,35 +59,22 @@ header{
 
 .btn{
     margin-top:1rem;
+   
     display: inline-block;
     font-size: 1.7rem;
     color: #fff;
     background: var(--red);
     border-radius: .4rem;
     cursor: pointer;
-    padding: .8rem 3rem;
+    padding: .5rem 2rem;
 }
 
 .btn:hover{
     background: var(--black);
     color: var(--red);
-    letter-spacing: .1rem;
+
 }
-.bta{
-    margin-top:1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--red);
-    border-radius: .5rem;
-    cursor: pointer;
-    padding: .8rem 3rem;
-}
-.bta:hover{
-    background: var(--black);
-    color: var(--red);
-    letter-spacing: .1rem;
-}
+
 
 header .logo{
     color: #fff;;
@@ -144,6 +131,7 @@ header .icons #menu-bars{
    
 }
 
+
 .home .box{
     min-height: 100vh;
     display:-webkit-box;
@@ -185,31 +173,41 @@ header .icons #menu-bars{
     padding: 1rem 0;
 }
 
-.anime{
-    padding:5rem;
-    
-}
 
+
+   
+ 
 .anime .box{
-    min-height: 50vh;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display: flex;
-    align-items: center;
+    margin-left: 100px;
+    min-width: 30vh;
+    margin-right:4rem; 
+    min-height: 40vh;
+   
     background-size: cover !important;
     background-position: center !important;
-    justify-content:flex-end;
-    padding:2rem 9%;
-    padding-top: 250px;
-    position: relative;
-    background-color: hsla(0,0%,10%, .1);
-    border: 2px solid var(--white-color);
-    margin-inline: 2.8rem;
+ 
+ 
+      margin-inline: 2.8rem;
     padding: 2.5rem 1.5rem;
     border-radius: 1rem;
-    backdrop-filter: blur(8px);
+
 }
 
+.anime .box:hover{
+       
+    transform: scale(1.1);
+    transition: transform.2s ease-in-out;
+    box-shadow: var(--box-shadow);
+    flex: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 12;
+    color: #fff;
+    background: var(--red);
+    border-radius: 1rem;
+
+
+}
 .anime .content h3{
     font-size: 1.7rem;
     color: #ffffff;
@@ -224,10 +222,6 @@ header .icons #menu-bars{
 
 }
 .anime .btn{
-    font-size: 1.4rem;
-  
-}
-.anime .bta{
     font-size: 1.4rem;
   
 }
@@ -257,6 +251,7 @@ header .icons #menu-bars{
 
 
 
+
 /* media query */
 @media(max-width: 991px){
     html{
@@ -269,37 +264,9 @@ header .icons #menu-bars{
     section{
         padding:2rem;
     }
-    
-    
-    .home .box {
-        font-size:5rem;
-        padding-top: 500px;
-         
-    }
-
-    .anime .box {
-        min-width: 15vh;
-        min-height: 22vh;
-    
-    }
- 
-    .anime .bta{
-        font-size: 1.6rem;
-    }    
-    .anime .btn{
-        font-size: 1.2rem;
-    }
-    
-
 }
 
 @media(max-width: 768px){
-    .content-mobile{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
     header .icons #menu-bars{
         display: inline-block;
     }
@@ -325,30 +292,16 @@ header .icons #menu-bars{
         font-size: 2rem;
         background: var(--red);
     }
-    
-
-    
-    .home .box {
+    .home .box .content h3{
         font-size:5rem;
-        padding-top: 500px;
-         
     }
+    .anime .box:hover{
+      
+      transform: scale(1.3);
+      z-index: 2;
 
-    .anime .box {
-        min-width: 15vh;
-        min-height: 22vh;
-        margin-inline: 2.8rem;
-    
     }
- 
-    .anime .bta{
-        font-size: 1.6rem;
-    }    
-    .anime .btn{
-        font-size: 1.2rem;
-    }
-    
-
+}
 
 @media(max-width: 450px){
     html{
@@ -356,11 +309,5 @@ header .icons #menu-bars{
 
     }
 
-    .anime .box {
-        min-width: 18vh;
-        min-height: 20vh;
-    
-    }
- 
-}
+
 }
